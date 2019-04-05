@@ -4,28 +4,17 @@ import { Route, NavLink, withRouter } from 'react-router-dom';
 import Home from './home/Home.js';
 import Register from './register/Register.js';
 import Login from './login/Login.js';
-// import Jokes from './users/Jokes.js';
+import Jokes from './jokes/Jokes.js';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
-          <NavLink to="/">Home</NavLink> 
-          &nbsp;|&nbsp;
-          <NavLink to="/register">Register</NavLink> 
-          &nbsp;|&nbsp;
-          <NavLink to="/login">Login</NavLink> 
-          &nbsp;|&nbsp;
-          <NavLink to="/users">Jokes</NavLink> 
-          &nbsp;|&nbsp;
-          <button onClick={this.logout}>Logout</button>
-        </header>
         <main>
           <Route exact path="/" component={Home} />
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
-          {/* <Route path="/jokes" component={Users} /> */}
+          <Route path="/jokes" component={Jokes} />
         </main>
       </div> 
     );
