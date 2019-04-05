@@ -103,7 +103,7 @@ class Register extends React.Component {
             <Nav />
             <H1>Sign up for Dad Jokes</H1>
             <Form>
-              <form onSubmit={this.handleSubmit}>
+              <form onSubmit={this.handleSubmit}> 
                 <p>Username</p>
                 <input
                   type="text"
